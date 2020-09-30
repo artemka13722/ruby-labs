@@ -1,3 +1,5 @@
+![Unit Tests & Lint](https://github.com/artemka13722/ruby-labs/workflows/Unit%20Tests%20&%20Lint/badge.svg)
+
 # Ruby Study
 ## Install
 
