@@ -6,27 +6,27 @@ require 'rspec'
 RSpec.describe ConverterCKF do
   describe '.converter' do
     context 'From C to F' do
-      it { expect(ConverterCKF.convert(10, 'C', 'F')).to eq 50 }
+      it { expect(ConverterCKF.convert(42, 'C', 'F')).to eq 107 }
     end
 
     context 'From C to K' do
-      it { expect(ConverterCKF.convert(10, 'C', 'K')).to eq 283 }
+      it { expect(ConverterCKF.convert(42, 'C', 'K')).to eq 315 }
     end
 
     context 'From F to C' do
-      it { expect(ConverterCKF.convert(10, 'F', 'C')).to eq(-13) }
+      it { expect(ConverterCKF.convert(42, 'F', 'C')).to eq(5) }
     end
 
     context 'From F to K' do
-      it { expect(ConverterCKF.convert(10, 'F', 'K')).to eq 265 }
+      it { expect(ConverterCKF.convert(42, 'F', 'K')).to eq 297 }
     end
 
     context 'From K to C' do
-      it { expect(ConverterCKF.convert(10, 'K', 'C')).to eq(-263) }
+      it { expect(ConverterCKF.convert(42, 'K', 'C')).to eq(-231) }
     end
 
     context 'From K to F' do
-      it { expect(ConverterCKF.convert(210, 'K', 'F')).to eq(-81) }
+      it { expect(ConverterCKF.convert(42, 'K', 'F')).to eq(-384) }
     end
   end
 end

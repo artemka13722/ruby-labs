@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# class to convert C, F, K in degrees
 class ConverterCKF
   def self.convert(value, from, to)
     case from
